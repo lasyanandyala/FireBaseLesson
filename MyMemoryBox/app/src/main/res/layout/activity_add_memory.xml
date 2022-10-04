@@ -9,49 +9,47 @@
         android:id="@+id/textView2"
         android:layout_width="344dp"
         android:layout_height="56dp"
-        android:layout_marginTop="80dp"
+        android:layout_marginTop="48dp"
         android:background="@color/purple_500"
-        android:text="Add a Memory"
         android:gravity="center"
+        android:text="Add a Memory"
         android:textColor="@color/teal_200"
         android:textColorHighlight="#A54E4E"
         android:textSize="40sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintHorizontal_bias="0.492"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/textView3"
+        android:id="@+id/memorySpinner"
         android:layout_width="259dp"
         android:layout_height="48dp"
         android:background="@color/teal_200"
+        android:gravity="center"
         android:text="Select a Memory Rating"
         android:textColor="@color/purple_700"
         android:textSize="20sp"
-        android:gravity="center"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.493"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.232" />
+        app:layout_constraintVertical_bias="0.203" />
 
     <TextView
         android:id="@+id/textView4"
         android:layout_width="259dp"
         android:layout_height="48dp"
         android:background="@color/teal_200"
-        android:text="Name of Memory"
         android:gravity="center"
+        android:text="Name of Memory"
         android:textColor="@color/purple_700"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.493"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.326" />
+        app:layout_constraintVertical_bias="0.302" />
 
     <TextView
         android:id="@+id/textView5"
@@ -66,17 +64,16 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.627" />
+        app:layout_constraintVertical_bias="0.682" />
 
     <Button
         android:id="@+id/button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="92dp"
+        android:layout_marginBottom="56dp"
         android:text="Add Memory"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
