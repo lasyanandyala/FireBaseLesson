@@ -30,19 +30,19 @@ public class Memory implements Parcelable {
     }
 
 
-    public static final Parcelable.Creator<Memory> CREATOR = new
-            Parcelable.Creator<Memory>() {
+    //public static final Parcelable.Creator<Memory> CREATOR = new
+            //Parcelable.Creator<Memory>() {
 
-                @Override
+                //@Override
                 public Memory createFromParcel(Parcel parcel) {
                     return new Memory(parcel);
                 }
 
-                @Override
+                //@Override
                 public Memory[] newArray(int size) {
                     return new Memory[0];
                 }
-            };
+            //};
     @Override
     public int describeContents() {
         return 0;

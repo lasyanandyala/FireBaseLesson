@@ -25,14 +25,14 @@ public class AddMemoryActivity extends AppCompatActivity implements AdapterView.
         setContentView(R.layout.activity_add_memory);
 
         // this attaches my spinner design (spinner_list.xml) and my array of spinner choices(R.array.memoryRating)
-        spinner = findViewById(R.id.memorySpinner);
-        ArrayAdapter<String> adapter = new ArrayAdapter<>(this, R.layout.spinner_list,
-                getResources().getStringArray(R.array.memoryRating));
+        //spinner = findViewById(R.id.memorySpinner);
+        //ArrayAdapter<String> adapter = new ArrayAdapter<>(this, R.layout.spinner_list,
+                //getResources().getStringArray(R.array.memoryRating));
 
         // this attaches my custom row design (how I want each row to look)
-        adapter.setDropDownViewResource(R.layout.custom_spinner_dropdown_row);
+        //adapter.setDropDownViewResource(R.layout.custom_spinner_dropdown_row);
 
-        spinner.setAdapter(adapter);
+        //spinner.setAdapter(adapter);
         spinner.setOnItemSelectedListener(this);
     }
     @Override
