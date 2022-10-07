@@ -4,7 +4,7 @@
     android:layout_height="match_parent">
     <TextView
         xmlns:android="http://schemas.android.com/apk/res/android"
-        android:id="@+id/memorySpinner"
+        android:id="@+id/priorityChosen"
         style="?attr/spinnerDropDownItemStyle"
         android:layout_width="@dimen/memEditTextWidth"
         android:layout_height="@dimen/spinnerHeight"

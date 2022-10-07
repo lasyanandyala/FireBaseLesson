@@ -1,6 +1,7 @@
 package com.example.mymemorybox;
 
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
@@ -25,7 +26,7 @@ public class AddMemoryActivity extends AppCompatActivity implements AdapterView.
         setContentView(R.layout.activity_add_memory);
 
         // this attaches my spinner design (spinner_list.xml) and my array of spinner choices(R.array.memoryRating)
-        spinner = findViewById(R.id.memorySpinner);
+        spinner = findViewById(R.id.spinnerId);
         ArrayAdapter<String> adapter = new ArrayAdapter<>(this, R.layout.spinner_list,
                 getResources().getStringArray(R.array.memoryRating));
 
@@ -34,6 +35,8 @@ public class AddMemoryActivity extends AppCompatActivity implements AdapterView.
 
         spinner.setAdapter(adapter);
         spinner.setOnItemSelectedListener(this);
+
+        Intent intent = getIntent();
     }
     @Override
     public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
