@@ -15,12 +15,26 @@ public class Memory implements Parcelable {
         this.desc = desc;
         this.imageResourceId = 0;
     }
+
     public Memory(Parcel parcel) {
         name = parcel.readString();
         rating = parcel.readInt();
         desc = parcel.readString();
         imageResourceId = parcel.readInt();
     }
+
+    public Memory() {
+        name = "";
+        rating = 0;
+        desc = "";
+        imageResourceId = 0;
+    }
+
+    public String toString() {
+        return this.name;
+    }
+
+
     @Override
     public void writeToParcel(Parcel dest, int flags) {
         dest.writeString(name);
@@ -30,8 +44,8 @@ public class Memory implements Parcelable {
     }
 
 
-    //public static final Parcelable.Creator<Memory> CREATOR = new
-            //Parcelable.Creator<Memory>() {
+    public static final Parcelable.Creator<Memory> CREATOR = new
+            Parcelable.Creator<Memory>() {
 
                 //@Override
                 public Memory createFromParcel(Parcel parcel) {
@@ -42,7 +56,7 @@ public class Memory implements Parcelable {
                 public Memory[] newArray(int size) {
                     return new Memory[0];
                 }
-            //};
+            };
     @Override
     public int describeContents() {
         return 0;

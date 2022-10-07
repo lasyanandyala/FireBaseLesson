@@ -2,5 +2,18 @@
 <androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
+    <TextView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/priorityChosen"
+        style="?attr/spinnerDropDownItemStyle"
+        android:layout_width="@dimen/memEditTextWidth"
+        android:layout_height="@dimen/spinnerHeight"
+        android:text="My Choice"
+        android:padding="@dimen/padding"
+        android:background="@color/teal_700"
+        android:textColor="@color/black"
+        android:textSize="@dimen/fontRegular"
+        android:layout_marginTop="@dimen/margin"
+        />
 
 </androidx.appcompat.widget.LinearLayoutCompat>
