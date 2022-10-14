@@ -6,20 +6,22 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
+import android.widget.EditText;
 import android.widget.Spinner;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 public class AddMemoryActivity extends AppCompatActivity implements AdapterView.OnItemSelectedListener  {
-
+    Spinner spinner;
+    EditText memoryName, memoryDesc;
+    String spinnerSelectedText = "none";
     // How to implement a Spinner
     // https://www.tutorialspoint.com/how-to-get-spinner-value-in-android
 
     // How to style the spinner
     // https://www.youtube.com/watch?v=7tnlh1nVkuE
-
-    Spinner spinner;
+    
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

@@ -22,7 +22,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/textView4"
+        android:id="@+id/memNameEditText"
         android:layout_width="259dp"
         android:layout_height="48dp"
         android:background="@color/teal_200"
@@ -37,7 +37,7 @@
         app:layout_constraintVertical_bias="0.302" />
 
     <TextView
-        android:id="@+id/textView5"
+        android:id="@+id/memoryDescEditText"
         android:layout_width="251dp"
         android:layout_height="272dp"
         android:background="@color/teal_200"
