@@ -155,9 +155,7 @@ certain things from occurring until after the onSuccess is finished.
 
     private void readData(FirestoreCallback firestoreCallback) {
         myMemories.clear();        // empties the AL so that it can get a fresh copy of data
-        db.collection("users").document(uid).collection("myMemoryList")
-                .get()
-                .addOnCompleteListener(new OnCompleteListener<QuerySnapshot>() {
+        db.collection("users").document(uid).collection("myMemoryList").get().addOnCompleteListener(new OnCompleteListener<QuerySnapshot>() {
                     @Override
                     public void onComplete(@NonNull Task<QuerySnapshot> task) {
                         if (task.isSuccessful()) {

@@ -101,8 +101,9 @@ public class SignInActivity extends AppCompatActivity  {
                                 Log.d(TAG, userName + " created and logged in");
 
                                 // we will implement this later
-                                // updateIfLoggedIn();
-                                // firebaseHelper.attachReadDataToUser();
+                                firebaseHelper.addUserToFirestore(userName, firebaseHelper.getmAuth().getUid());
+                                firebaseHelper.attachReadDataToUser();
+                                //updateIfLoggedIn();
 
                                 Intent intent = new Intent(SignInActivity.this, SelectActionActivity.class);
                                 startActivity(intent);
@@ -136,7 +137,7 @@ public class SignInActivity extends AppCompatActivity  {
 
                                 // we will implement this later
                                 // updateIfLoggedIn();
-                                // firebaseHelper.attachReadDataToUser();
+                                firebaseHelper.attachReadDataToUser();
 
                                 Log.d(TAG, userName + " logged in");
 
