@@ -61,10 +61,10 @@ public class AddMemoryActivity extends AppCompatActivity implements AdapterView.
 
         // Note the syntax here for how to access an index of a string array within
         // the java
-        for (int i = 1; i < 6; i++) {
+        for (int i = 0; i < 5; i++) {
             if (spinnerSelectedText.equals(getResources().
                     getStringArray(R.array.memoryRating)[i])) {
-                memoryRatingNum = 6-i;
+                memoryRatingNum = 5-i;
                 break;
             }
         }
