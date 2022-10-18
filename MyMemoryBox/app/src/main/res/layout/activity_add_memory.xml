@@ -11,6 +11,7 @@
         android:layout_height="56dp"
         android:layout_marginTop="48dp"
         android:background="@color/purple_500"
+        android:fontFamily="casual"
         android:gravity="center"
         android:text="Add a Memory"
         android:textColor="@color/teal_200"
@@ -26,6 +27,7 @@
         android:layout_width="259dp"
         android:layout_height="48dp"
         android:background="@color/teal_200"
+        android:fontFamily="casual"
         android:gravity="center"
         android:hint="Name of Memory"
         android:textColor="@color/purple_700"
@@ -41,6 +43,7 @@
         android:layout_width="251dp"
         android:layout_height="272dp"
         android:background="@color/teal_200"
+        android:fontFamily="casual"
         android:gravity="center"
         android:hint="Description"
         android:textColor="@color/purple_700"
@@ -56,6 +59,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="56dp"
+        android:fontFamily="casual"
         android:onClick="addMemoryButtonClicked"
         android:text="Add Memory"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -64,14 +68,15 @@
 
     <Spinner
         android:id="@+id/spinnerId"
-        android:layout_width="409dp"
-        android:layout_height="wrap_content"
+        android:layout_width="282dp"
+        android:layout_height="46dp"
         android:hint="Select a Memory Rating"
+        android:textAlignment="center"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.589"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.219" />
+        app:layout_constraintVertical_bias="0.202" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
